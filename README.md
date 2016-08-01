@@ -160,7 +160,9 @@ Work through the ``tree-practice/vocab-practice-with-solutions.md`` file. This f
 Featured contents of this repository:
 
 [quick-reference.md](quick-reference.md) - a brief summary of tree types, operations, and traversal
+
 [tree-practice/](tree-practice) - practice tasks for general trees, binary search trees, and tries
+
 [longer-reference.md](longer-reference.md) - a longer set of notes including run times and interview tips 
 
 ## Licensing
