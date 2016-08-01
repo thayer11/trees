@@ -1,6 +1,6 @@
 #  <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60">  Trees!
 
-Objectives:
+## Objectives:
 - List the tree vocabulary words
 - Identify the Big(O) value of search using binary search trees  
 - Describe the breadth first 
@@ -13,15 +13,15 @@ developers.
 
 ## Basic Vocabulary 
 
-- **Node ** or **Vertex** A place to store data. Usually we have a key and some additional data in a node.
-- **Edge** A connection between two nodes. It can represent an association , A edge can be undirected or 
+- **Node** or **Vertex** A place to store data. Usually we have a key and some additional data in a node.
+- **Edge** A connection between two nodes. It can represent an association or relationship between nodes. An edge can be undirected or directed.  
 - **Graph** A combination of vertices and edges. Graphs are often modeled as node and edge objects or as a matrix where the 
 rows and columns represent the nodes and the values of the matrix represent the edges. 
-- **Tree** A special graph where there is a root node and each node other than the root has only one parent.
-- **Binary Search Tree** A tree that is balanced tree where each node has 2 children. The node to the left is less than the 
-parent the node to the right is bigger than the parent.
+- **Tree** A special graph where there is a root node and each node other than the root has only one parent. The node without a parent is called the root node. The other other nodes are called leaves.
+- **Binary Search Tree** A tree where each node has 2 children. The node to the left is less than the 
+parent. The node to the right is bigger than the parent.
 - A **Balanced Tree** means that all of the nodes of given height are filled in before the next height is started. A balanced tree will have the smallest height possible given the number of nodes in a tree.
-- *Trie** A specialized tree to organize word lists. Each node is a letter. There's also a special node called the ``end`` node that stores the end of a word. Edges exist between two nodes if there is a word were the child letter follows the parent. Tries make things like autocomplete easier to complete.
+- *Trie** A specialized tree to organize word lists. Each node is a letter. There may also be a special node called the ``end`` node that stores the end of a word. Edges exist between two nodes if there is a word were the child letter follows the parent. Tries make things like autocomplete easier to complete.
 
 A fact that 
 
