@@ -33,14 +33,6 @@ class Tree
   end
 
   ##
-  # Searches through all nodes of the tree, spreading 
-  # outward from the root. Looks for any node with key equal
-  # to the +target_key+ param. Returns nil if no such node is found.
-  def breadth_first_search(target_key)
-    nil
-  end
-
-  ##
   # Searches through tree for a single node whose key is equal to
   # the +target_key+ param. Looks through nodes in a depth-first order,
   # by following each path as deep as it can before backtracking.
@@ -78,15 +70,35 @@ u_node.children << w_node
 puts "\n-- expect node U --"
 u_result = my_tree.depth_first_search('U')
 p u_result
-
+# ["Q"]
+# ["Q", "R", "S"]
+# ["Q", "R", "T", "U", "V"]
+# ["Q", "R", "T", "U", "W"]
+# ["Q", "R", "T", "U"]
+# #<Tree:0x007fe77c29dae0 @key="U", @children=[]>
 
 puts "\n-- expect node W --"
 w_result = my_tree.depth_first_search('W')
 p w_result
-
+# ["Q"]
+# ["Q", "R", "S"]
+# ["Q", "R", "T", "U", "V"]
+# ["Q", "R", "T", "U", "W"]
+# #<Tree:0x007fe77c29dae0 @key="W", @children=[]>
 
 puts "\n-- expect nil -- "
 z_result = my_tree.depth_first_search('Z')
 p z_result
+# ["Q"]
+# ["Q", "R", "S"]
+# ["Q", "R", "T", "U", "V"]
+# ["Q", "R", "T", "U", "W"]
+# ["Q", "R", "T", "U"]
+# ["Q", "R", "T"]
+# ["Q", "R"]
+# ["Q"]
+# []
+# nil
+
 
 
