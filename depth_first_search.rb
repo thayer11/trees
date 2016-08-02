@@ -38,7 +38,16 @@ class Tree
   # by following each path as deep as it can before backtracking.
   # Returns nil if no such node is found.
   def depth_first_search(target_key)
-    nil
+    stack = [self]
+  while !stack.empty
+    my_tree = stack[stack.length-1]
+  if my_tree.key == target_key
+    return my_tree
+  end
+  else 
+    my_tree.children.each do |leaf|
+    stack.push
+  end
   end
 
 end
